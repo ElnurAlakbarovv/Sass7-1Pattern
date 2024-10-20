@@ -1,0 +1,39 @@
+#about {
+  max-width: 144rem;
+  margin: 0 auto;
+  h1 {
+    margin-top: 8rem;
+    font-family: "Playfair Display SC", serif;
+    font-size: 4.8rem;
+    padding: 3rem 0;
+    color: #2d2d2b;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    .about-text {
+      p {
+        font-size: 1.8rem;
+        width: 56.3rem;
+        margin-bottom: 1rem;
+        color: #2d2d2b;
+      }
+      button {
+        margin-top: 4rem;
+        width: 33rem;
+        height: 5.4rem;
+        color: #b8926a;
+        border: 1px solid #b8926a;
+        border-radius: 1rem;
+        background-color: transparent;
+        transition: all 0.2s;
+        &:hover{
+          border: 3px solid #A5825D;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

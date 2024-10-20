@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  padding: 1rem 2rem;
+}
+header .container .top-head {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .top-head .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+header .container .top-head .search-bar div:nth-child(1) {
+  border: 1px solid #d4c8be;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3.2rem;
+  font-family: "Raleway", sans-serif;
+}
+header .container .top-head .search-bar div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3.2rem;
+}
+header .container .top-head .cart-bar {
+  display: flex;
+  gap: 1rem;
+}
+header .container .top-head .cart-bar div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3.2rem;
+}
+header .container .top-head .cart-bar div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3.2rem;
+}
+header .container .top-head .head-name {
+  width: 19.9rem;
+  height: 4rem;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+}
+header .container .navbar {
+  font-family: "Raleway", sans-serif;
+  margin-top: 3rem;
+}
+header .container .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+header .container .navbar ul li {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+}
+header .container .navbar ul li a {
+  text-decoration: none;
+  color: #2d2d2b;
+  position: relative;
+}
+header .container .navbar ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 0%;
+  height: 0.3rem;
+  background-color: #B8926A;
+  transition: all 0.4s;
+}
+header .container .navbar ul li a:hover::before {
+  width: 100%;
+}
+
+#footer {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+#footer .footer {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .footer .text1 {
+  width: 39rem;
+}
+#footer .footer .text1 p {
+  font-family: "Playfair Display", serif;
+}
+#footer .footer .text1 p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+#footer .footer .text2 {
+  width: 25rem;
+}
+#footer .footer .text2 p {
+  font-family: "Raleway", sans-serif;
+}
+#footer .footer .text3 {
+  width: 14.2rem;
+}
+#footer .footer .text3 p {
+  font-family: "Raleway", sans-serif;
+}
+#footer .footer .text4 {
+  width: 20rem;
+}
+#footer .footer .text4 p {
+  font-family: "Raleway", sans-serif;
+}
+
+#fragman {
+  position: relative;
+  display: flex;
+  max-width: 144rem;
+  margin: 2rem auto;
+}
+#fragman .left-fragman {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+  position: absolute;
+  margin-top: 14rem;
+}
+#fragman .left-fragman h1 {
+  width: 80rem;
+  height: 16.2rem;
+  font-size: 7.2rem;
+  font-family: "Playfair Display SC", serif;
+  color: #2d2d2b;
+}
+#fragman .left-fragman p {
+  width: 44.7rem;
+  height: 3.5rem;
+  color: #2d2d2b;
+}
+#fragman .left-fragman .shop-btn {
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #b8926a;
+  color: #eae6df;
+  font-family: "Raleway", sans-serif;
+  gap: 1rem;
+  width: 33rem;
+  height: 5.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#fragman .left-fragman .shop-btn:hover {
+  background-color: #a5825d;
+}
+#fragman .right-fragman {
+  position: relative;
+  left: 52.7rem;
+  z-index: -1;
+}
+#fragman .right-fragman .blur {
+  width: 33rem;
+  height: 75.7rem;
+  position: absolute;
+  top: 0;
+  border-radius: 1rem;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+
+#products {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+#products .container {
+  margin: 5rem auto 0;
+}
+#products .container .products-type {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+  text-align: center;
+}
+#products .container .products-type .products-name {
+  height: 5.5rem;
+  width: 33rem;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 1rem 1rem;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+#products .container .products-type .products-name p {
+  font-family: "Raleway", sans-serif;
+  color: #eae6df;
+  font-weight: 500;
+}
+#products .container .back-front {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: end;
+}
+
+.bolme {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+#discount {
+  margin-top: 8rem;
+}
+#discount .container {
+  position: relative;
+}
+#discount .container .discount-back {
+  background-image: url(/assets/img/Rectangle\ 115.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  max-width: 100%;
+  height: 36.7rem;
+  filter: blur(1rem);
+}
+#discount .container .discount-text {
+  width: 100%;
+  padding: 7.2rem 5rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+#discount .container .discount-text h1 {
+  font-size: 6.4rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-family: "Playfair Display", serif;
+}
+#discount .container .discount-text p {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 44.5rem;
+  color: #eae6df;
+  font-family: "Raleway", sans-serif;
+}
+#discount .container .discount-text .shop-btn {
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #b8926a;
+  color: #eae6df;
+  font-family: "Raleway", sans-serif;
+  gap: 1rem;
+  width: 33rem;
+  height: 5.4rem;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+#discount .container .discount-text .shop-btn:hover {
+  background-color: #A5825D;
+}
+
+#sale-products {
+  max-width: 144rem;
+  margin: 3rem auto;
+}
+#sale-products .sale-head {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#sale-products .sale-head h1 {
+  font-size: 4.8rem;
+  font-family: "Playfair Display", serif;
+}
+#sale-products .sale-head p a {
+  color: #B8926A;
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+}
+#sale-products .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 4rem;
+}
+#sale-products .container .sale {
+  position: relative;
+  width: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#sale-products .container .sale p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+#sale-products .container .sale p:nth-child(3) {
+  color: #B8926A;
+  font-weight: 600;
+}
+#sale-products .container .sale .favorite-btn {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+#collections {
+  max-width: 144rem;
+  margin: 5rem auto;
+}
+#collections h1 {
+  padding: 5rem 0;
+  font-size: 4.8rem;
+  font-family: "Playfair Display", serif;
+}
+#collections .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#collections .container .collections {
+  position: relative;
+}
+#collections .container .collections .collections-text {
+  position: absolute;
+  height: 7.3rem;
+  width: 44.6rem;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+#collections .container .collections .collections-text p {
+  color: #eae6df;
+  font-family: "Raleway", sans-serif;
+}
+
+#about {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+#about h1 {
+  margin-top: 8rem;
+  font-family: "Playfair Display SC", serif;
+  font-size: 4.8rem;
+  padding: 3rem 0;
+  color: #2d2d2b;
+}
+#about .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+#about .container .about-text p {
+  font-size: 1.8rem;
+  width: 56.3rem;
+  margin-bottom: 1rem;
+  color: #2d2d2b;
+}
+#about .container .about-text button {
+  margin-top: 4rem;
+  width: 33rem;
+  height: 5.4rem;
+  color: #b8926a;
+  border: 1px solid #b8926a;
+  border-radius: 1rem;
+  background-color: transparent;
+  transition: all 0.2s;
+}
+#about .container .about-text button:hover {
+  border: 3px solid #A5825D;
+  font-weight: 600;
+}
+
+#contact {
+  max-width: 144rem;
+  margin: 5rem auto;
+}
+#contact h1 {
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+}
+#contact .container {
+  display: flex;
+  justify-content: space-between;
+}
+#contact .container .form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#contact .container .form-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#contact .container .form-contact form input {
+  width: 56.3rem;
+  height: 5.4rem;
+  border: 1px solid #d4c8be;
+  outline: none;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+#contact .container .form-contact form input::-moz-placeholder {
+  color: #B0B0B0;
+  font-family: "Raleway", sans-serif;
+}
+#contact .container .form-contact form input::placeholder {
+  color: #B0B0B0;
+  font-family: "Raleway", sans-serif;
+}
+#contact .container .form-contact form textarea {
+  width: 56.3rem;
+  height: 13.6rem;
+  border: 1px solid #d4c8be;
+  outline: none;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+#contact .container .form-contact form textarea::-moz-placeholder {
+  color: #B0B0B0;
+  font-family: "Raleway", sans-serif;
+}
+#contact .container .form-contact form textarea::placeholder {
+  color: #B0B0B0;
+  font-family: "Raleway", sans-serif;
+}
+#contact .container .form-contact button {
+  width: 56.3rem;
+  height: 5.4rem;
+  border: none;
+  border-radius: 1rem;
+  color: #eae6df;
+  background-color: #b8926a;
+  transition: 0.3s;
+}
+#contact .container .form-contact button:hover {
+  background-color: #A5825D;
+}/*# sourceMappingURL=main.css.map */

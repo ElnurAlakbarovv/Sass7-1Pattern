@@ -1,0 +1,233 @@
+#fragman {
+  position: relative;
+  display: flex;
+  max-width: 144rem;
+  margin: 2rem auto;
+  .left-fragman {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+    position: absolute;
+    margin-top: 14rem;
+    h1 {
+      width: 80rem;
+      height: 16.2rem;
+      font-size: 7.2rem;
+      font-family: "Playfair Display SC", serif;
+      color: #2d2d2b;
+    }
+    p {
+      width: 44.7rem;
+      height: 3.5rem;
+      color: #2d2d2b;
+    }
+    .shop-btn {
+      font-size: 1.6rem;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background-color: #b8926a;
+      color: #eae6df;
+      font-family: "Raleway", sans-serif;
+      gap: 1rem;
+      width: 33rem;
+      height: 5.4rem;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: #a5825d;
+      }
+    }
+  }
+  .right-fragman {
+    position: relative;
+    left: 52.7rem;
+    z-index: -1;
+    .blur {
+      width: 33rem;
+      height: 75.7rem;
+      position: absolute;
+      top: 0;
+      border-radius: 1rem;
+      backdrop-filter: blur(1rem);
+    }
+  }
+}
+
+#products {
+  max-width: 144rem;
+  margin: 0 auto;
+  .container {
+    margin: 5rem auto 0;
+    .products-type {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      position: relative;
+      text-align: center;
+      .products-name {
+        height: 5.5rem;
+        width: 33rem;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 0 1rem 1rem;
+        backdrop-filter: blur(1rem);
+        p {
+          font-family: "Raleway", sans-serif;
+          color: #eae6df;
+          font-weight: 500;
+        }
+      }
+    }
+    .back-front{
+      margin-top: 2rem;
+      display: flex;
+      justify-content: end;
+    
+    }
+  }
+}
+
+.bolme{max-width: 144rem;
+margin: 0 auto;}
+
+#discount {
+  margin-top: 8rem;
+  .container {
+    position: relative;
+    .discount-back {
+      background-image: url(/assets/img/Rectangle\ 115.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+      max-width: 100%;
+      height: 36.7rem;
+      filter: blur(1rem);
+    }
+    .discount-text {
+      width: 100%;
+      padding: 7.2rem 5rem;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      text-align: center;
+      h1 {
+        font-size: 6.4rem;
+        color: #fff;
+        margin-bottom: 2rem;
+        font-family: "Playfair Display", serif;
+      }
+      p {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 44.5rem;
+        color: #eae6df;
+        font-family:"Raleway", sans-serif;
+      }
+      .shop-btn {
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: #b8926a;
+        color: #eae6df;
+        font-family: "Raleway", sans-serif;
+        gap: 1rem;
+        width: 33rem;
+        height: 5.4rem;
+        margin: 0 auto;
+        transition: .3s;
+        &:hover{
+          background-color: #A5825D;
+        }
+      }
+    }
+  }
+}
+
+#sale-products {
+  max-width: 144rem;
+  margin: 3rem auto;
+  .sale-head {
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+      font-size: 4.8rem;
+      font-family: "Playfair Display", serif;
+    }
+    p{a{
+      color:#B8926A;
+      font-size: 1.6rem;
+      font-family:"Raleway", sans-serif;
+    }}
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 4rem;
+    .sale {
+      position: relative;
+      width: 33rem;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      p {
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-family:"Raleway", sans-serif;
+        &:nth-child(3){
+          color: #B8926A;
+          font-weight: 600;
+        }
+      }
+      .favorite-btn {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+      }
+    }
+  }
+}
+
+#collections {
+  max-width: 144rem;
+  margin: 5rem auto;
+  h1 {
+    padding: 5rem 0;
+    font-size: 4.8rem;
+    font-family: "Playfair Display", serif;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    .collections {
+      position: relative;
+      .collections-text {
+        position: absolute;
+        height: 7.3rem;
+        width: 44.6rem;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(1rem);
+        p {
+          color: #eae6df;
+          font-family:"Raleway", sans-serif;
+        }
+      }
+    }
+  }
+}

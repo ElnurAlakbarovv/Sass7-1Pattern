@@ -1,0 +1,36 @@
+#footer {
+  max-width: 144rem;
+  margin: 0 auto;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    .text1 {
+      width: 39rem;
+      p{
+        font-family: "Playfair Display", serif;
+      }
+      p {font-size: 1.2rem;
+        margin-top: 1rem;
+        font-family: "Raleway", sans-serif;
+      }
+    }
+    .text2 {
+      width: 25rem;
+      p {
+        font-family: "Raleway", sans-serif;
+      }
+    }
+    .text3 {
+      width: 14.2rem;
+      p {
+        font-family: "Raleway", sans-serif;
+      }
+    }
+    .text4 {
+      width: 20rem;
+      p {
+        font-family: "Raleway", sans-serif;
+      }
+    }
+  }
+}

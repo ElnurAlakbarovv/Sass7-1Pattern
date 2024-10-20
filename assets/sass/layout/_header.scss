@@ -1,0 +1,89 @@
+header {
+  padding: 1rem 2rem;
+  .container {
+    .top-head {
+      max-width: 144rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .search-bar {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        & div:nth-child(1) {
+          border: 1px solid #d4c8be;
+          border-radius: 0.4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 3rem;
+          width: 3.2rem;
+          font-family: "Raleway", sans-serif;
+        }
+        & div:nth-child(2) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 3rem;
+          width: 3.2rem;
+        }
+      }
+      .cart-bar {
+        display: flex;
+        gap: 1rem;
+        & div:nth-child(1) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 3rem;
+          width: 3.2rem;
+        }
+        & div:nth-child(2) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 3rem;
+          width: 3.2rem;
+        }
+      }
+      .head-name {
+        width: 19.9rem;
+        height: 4rem;
+        text-align: center;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 3.6rem;
+      }
+    }
+    .navbar {
+      font-family: "Raleway", sans-serif;
+      margin-top: 3rem;
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        li {
+          text-decoration: none;
+          font-size: 1.6rem;
+          font-family: "Raleway", sans-serif;
+          a{
+            text-decoration: none;
+            color: #2d2d2b;
+            position: relative;
+            &::before{
+              content: "";
+              position: absolute;
+              bottom: -1rem;left: 0;
+              width: 0%;
+              height: .3rem;
+              background-color: #B8926A;
+              transition: all .4s;
+            }&:hover::before{width: 100%;}
+          }
+        }
+      }
+    }
+  }
+}
